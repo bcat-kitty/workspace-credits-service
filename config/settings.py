@@ -71,6 +71,12 @@ REST_FRAMEWORK = {
     ],
 }
 
+AUTH_USER_MODEL = "accounts.UserAccount"
+
+SIMPLE_JWT = {
+    "USER_ID_FIELD": "id",
+}
+
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 USE_TZ = True
 TIME_ZONE = "UTC"
